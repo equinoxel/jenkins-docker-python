@@ -2,13 +2,6 @@ FROM jenkins/jenkins
 
 USER root
 
-# -- Install Pipenv:
-RUN apt update
-RUN apt install software-properties-common python-software-properties -y
-RUN add-apt-repository ppa:pypa/ppa -y
-RUN apt update
-RUN apt install pipenv -y
-
 ENV LC_ALL C.UTF-8
 ENV LANG C.UTF-8
 
