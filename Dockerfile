@@ -7,8 +7,6 @@ ENV LANG C.UTF-8
 
 
 RUN apt update \
-    && add-apt-repository ppa:pypa/ppa -y \
-    && apt update \
     && apk add --no-cache --update \
     python \
     python-dev \
