@@ -7,11 +7,11 @@ ENV LANG C.UTF-8
 
 
 RUN apt update \
-    && apk add --no-cache --update \
+    && apt install \
     python \
     python-dev \
     py-pip \
-    build-base \
+    build-base -y \
     && pip install virtualenv pipenv \
     && rm -rf /var/cache/apk/*
 
