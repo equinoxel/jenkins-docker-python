@@ -10,8 +10,7 @@ RUN apt update \
     && apt install \
     python \
     python-dev \
-    py-pip \
-    build-base -y \
+    py-pip -y \
     && pip install virtualenv pipenv \
     && rm -rf /var/cache/apk/*
 
